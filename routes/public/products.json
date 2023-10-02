@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Potato",
+    "description": "This is Aaloo",
+    "price": 20,
+    "category": "Vegetable",
+    "imagePath": "/images/1696165955397-potatoes.webp"
+  },
+  {
+    "name": "Tomato",
+    "description": "This is tamatar",
+    "price": 20,
+    "category": "Vegetable",
+    "imagePath": "/images/1696166057283-360_F_78242902_khnafmk4uzoHWEENmA4pSFUw13UEYHG9.webp"
+  },
+  {
+    "name": "Wheat",
+    "description": "This is wheat",
+    "price": 800,
+    "category": "A kharif crop",
+    "imagePath": "/images/1696166186515-wheat-seed-heads-isolated-on-white-background.webp"
+  },
+  {
+    "name": "Rice",
+    "description": "This is chawal",
+    "price": 300,
+    "category": "A kharif Crop",
+    "imagePath": "/images/1696166265727-rice.webp"
+  },
+  {
+    "name": "Kuch bhi",
+    "description": "Faltu hai bhai",
+    "price": 0,
+    "category": "ye bhi faltu hai",
+    "imagePath": "/images/1696229185820-cauliflower.webp"
+  },
+  {
+    "name": "Pta nhi",
+    "description": "phr se kuch bhi",
+    "price": 20,
+    "category": "faltu",
+    "imagePath": "/images/1696229224730-rice.webp"
+  }
+]

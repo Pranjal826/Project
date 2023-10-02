@@ -1,0 +1,74 @@
+/* Centered Profile Container */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.pro-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.profile-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+    height: 50%;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.profile-container:hover {
+    transform: scale(1.05);
+}
+
+/* Profile Info Items */
+.info-item {
+    margin: 30px 0;
+}
+
+.info-item strong {
+    color: #333;
+}
+
+.info-item span {
+    color: #777;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.update-button,
+.delete-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.update-button:hover,
+.delete-button:hover {
+    background-color: #0056b3;
+}
+
+
+.profile-container {
+    /* Existing styles here */
+    transform-origin: center;
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+

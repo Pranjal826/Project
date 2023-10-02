@@ -1,0 +1,31 @@
+<!-- show.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Products</title>
+    <link rel="stylesheet" href="./stylesheets/show.css">
+</head>
+<body>
+    <%-include('./partials/nav')%>
+    <div class="container">
+        <h1>Show Products</h1>
+        <div class="product-list">
+            <% products.forEach(function(product) { %>
+                <div class="product-item">
+                    <h2><%= product.name %></h2>
+                    <p><strong>Description:</strong> <%= product.description %></p>
+                    <p><strong>Price:</strong> $<%= product.price.toFixed(2) %></p>
+                    <p><strong>Category:</strong> <%= product.category %></p>
+                   
+                    <img src="<%= product.imagePath %> " alt="<%= product.name %> Image" class="product-image">
+                    <div class="buttons">
+                        <button class="update-button">Update</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>

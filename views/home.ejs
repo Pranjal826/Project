@@ -1,0 +1,33 @@
+<!-- show.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Products</title>
+    <link rel="stylesheet" href="./stylesheets/show.css">
+    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+</head>
+<body>
+    <%-include('./partials/nav')%>
+    <div class="container">
+        <div class="product-list">
+            <% products.forEach(function(product) { %>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="<%= product.imagePath %> " alt="<%= product.name %> Image">
+                    </div>
+                    <div class="product-details">
+                        <h2><%= product.name %></h2>
+                        <p class="description"><%= product.description %></p>
+                        <p><strong>Price:</strong> $<%= product.price.toFixed(2) %></p>
+                        <p><strong>Category:</strong> <%= product.category %></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+<%-include('./partials/footer')%>

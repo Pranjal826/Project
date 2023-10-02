@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/show.css">
+    <link rel="stylesheet" href="./stylesheets/profile.css">
+
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+
+
+</head>
+<body>
+    <%-include('./partials/nav')%>
+    <div class="pro-container">
+        <div class="profile-container">
+            <h1>Welcome <%= name %>
+            </h1>
+            <div class="profile-info">
+                <div class="info-item">
+                    <strong>Email:</strong>
+                    <span>
+                        <%= email %>
+                    </span>
+                </div>
+                <div class="info-item">
+                    <strong>Phone:</strong>
+                    <span>
+                        <%= phone %>
+                    </span>
+                </div>
+                <div class="info-item">
+                    <strong>Age:</strong>
+                    <span>
+                        <%= age %>
+                    </span>
+                </div>
+                <div class="info-item">
+                    <strong>Country:</strong>
+                    <span>
+                        <%= country %>
+                    </span>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="/updateprofile" class="update-button">Update</a>
+                <a href="/deleteprofile" class="delete-button">Delete</a>
+            </div>
+        </div>
+    </div>
+    
+<%-include('./partials/footer')%>

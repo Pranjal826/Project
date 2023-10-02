@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="./stylesheets/update.css"> 
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+
+
+</head>
+<body>
+    <%-include('./partials/nav')%>
+    <div class="update">
+        <h1>Update Profile</h1>
+        <form method="post" action="/updateprofile">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="<%= name %>">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="<%= email %>">
+        
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value="<%= age %>">
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" value="<%= phone %>">
+
+            <label for="country">Country:</label>
+            <select name="country">
+                <option value="country">Select Country</option>
+                <% countryNames.forEach(function(c) { %>
+                    <option value="<%= c %>"><%= c %></option>
+                <% }); %>
+            </select>
+            
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+  
+    <%-include('./partials/footer')%>
+
